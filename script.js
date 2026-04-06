@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Watch educational videos and school event highlights.',
             icon: 'fa-youtube',
             iconClass: 'youtube',
-            url: 'https://youtube.com/drapjakicbjb',
+            url: 'https://youtube.com/@drapjakicbjb',
             actionText: 'Watch Videos'
         },
         {
