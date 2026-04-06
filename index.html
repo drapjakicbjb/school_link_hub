@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Link Hub | Connecting Students Digitally</title>
+    <meta name="description" content="Access all important school platform links from one place including Google Classroom, Youtube, and more.">
+    <!-- Google Fonts: Manrope & Be Vietnam Pro defined in Stitch MCP Design System -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="new_logo.png">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-image-group" id="nav-logo-group">
+                    <img src="rsy_logo.png" alt="RSY Logo" class="nav-logo-img">
+                    <img src="new_logo.png" alt="School Hub Logo" class="nav-logo-img">
+                    <img src="dal_sringari_logo-removebg-preview.png" alt="Dal Sringari Logo" class="nav-logo-img">
+                </span>
+                School Link Hub
+            </a>
+            
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content fade-in">
+                <h1>Connecting Students Digitally</h1>
+                <p>Welcome to your central digital atrium. Access all your learning platforms, communication channels, and important resources in one unified hub.</p>
+                <div class="hero-buttons">
+                    <a href="#platforms" class="btn btn-primary">Explore Platforms <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Added some floating shape decorations based on the design system -->
+            <div class="hero-decor shape-1"></div>
+            <div class="hero-decor shape-2"></div>
+        </section>
+
+        <!-- Platforms Section -->
+        <section class="platforms" id="platforms">
+            <div class="section-header fade-in">
+                <h2>Digital Platforms</h2>
+                <p>Quick access to all essential school services</p>
+            </div>
+            
+            <div class="search-container fade-in">
+                <div class="search-box">
+                    <i class="fa-solid fa-search search-icon"></i>
+                    <input type="text" id="platform-search" placeholder="Search platforms... (e.g. Google Classroom)">
+                </div>
+            </div>
+
+            <div class="grid" id="platform-grid">
+                <!-- Platform Cards will be injected by JavaScript -->
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="about-container fade-in">
+                <div class="about-card feature-inset">
+                    <div class="about-content">
+                        <h2>Our Vision</h2>
+                        <p>We believe in a future where educational resources are accessible, transparent, and effortlessly available to every student, teacher, and parent. The Digital Link Hub is designed to bridge the gap between our physical classrooms and the digital world, reducing friction and maximizing learning time.</p>
+                        <p>Embracing a comprehensive web ecosystem from Google Classrooms to quick communications through instant messaging, our school remains connected 24/7.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="#home" class="logo">
+                    <span class="logo-image-group" id="footer-logo-group">
+                        <img src="rsy_logo.png" alt="RSY Logo" class="nav-logo-img">
+                        <img src="dal_sringari_logo-removebg-preview.png" alt="Dal Sringari Logo" class="nav-logo-img">
+                        <img src="new_logo.png" alt="School Hub Logo" class="nav-logo-img">
+                    </span>
+                    School Link Hub
+                </a>
+                <p>Empowering the next generation through connected digital learning.</p>
+            </div>
+            
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100090759948402" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/drapjakicbjb" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://instagram.com/drapjakicbjb" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://youtube.com/drapjakicbjb" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 School Link Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Logos for Scroll Animation -->
+    <div id="floating-logos" style="position: fixed; top: 0; left: 0; z-index: 9999; pointer-events: none; display: flex; align-items: center; justify-content: center; gap: 0.5rem; transform-origin: center center; will-change: transform, opacity;">
+        <img src="rsy_logo.png" alt="RSY Logo" class="nav-logo-img">
+        <img src="new_logo.png" alt="School Hub Logo" class="nav-logo-img">
+        <img src="dal_sringari_logo-removebg-preview.png" alt="Dal Sringari Logo" class="nav-logo-img">
+    </div>
+
+    <!-- Floating Theme Toggle -->
+    <button id="theme-toggle" class="theme-toggle floating-theme-btn" aria-label="Toggle Dark Mode">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
