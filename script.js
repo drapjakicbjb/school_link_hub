@@ -3,6 +3,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // ===== PLATFORM DATA =====
     const platforms = [
         {
+            id: 'admission-portal',
+            name: 'Admission Portal',
+            description: 'Apply for the new academic session. Download prospectus and fill out the online admission form.',
+            icon: 'fa-file-signature',
+            iconClass: 'admission',
+            url: 'https://drapjakicbjb.github.io/application_form/',
+            actionText: 'Apply Now',
+            featured: true
+        },
+        {
             id: 'whatsapp-contact',
             name: 'WhatsApp Support',
             description: 'Message us directly on WhatsApp (+91 94542 42284).',
@@ -107,10 +117,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         filtered.forEach((platform, index) => {
             const card = document.createElement('div');
-            card.className = 'card fade-in';
+            card.className = `card fade-in ${platform.featured ? 'card-featured' : ''}`;
             card.style.animationDelay = `${index * 0.1}s`;
             
             card.innerHTML = `
+                ${platform.featured ? '<div class="featured-badge">Featured</div>' : ''}
                 <div class="card-icon ${platform.iconClass}">
                     <i class="fa-brands ${platform.icon} ${platform.icon.includes('-user') || platform.icon.includes('-globe') ? 'fa-solid' : ''}"></i>
                 </div>
